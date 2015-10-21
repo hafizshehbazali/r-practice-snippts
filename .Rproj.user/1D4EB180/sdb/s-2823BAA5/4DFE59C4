@@ -1,0 +1,18 @@
+{
+    "contents" : "#\nlibrary(magic)\na=magic(5)\na = matrix(floor(runif(10000, min = 0, max = 255)), nrow = 100) # 100 x 100\n\nb = matrix(floor(runif(10000, min = 0, max = 255)), nrow = 100) - 5 # 100 x 100\n\nc = matrix(floor(runif(10000, min = 0, max = 255)), nrow = 100) - 20 # 100 x 100\nclass(c)\nim = abind::abind(a,b,c, along = 3)\nclass(im)\ntypeof(im)\nnim = EBImage::Image(im, colormode = \"Color\") # this will convert the\nclass(nim)\nEBImage::imageData(nim);\ndim(nim)\nEBImage::display(nim)\nEBImage::display(getFrame(nim,1))\nEBImage::display(getFrame(nim,2))\nEBImage::display(getFrame(nim,3))\n",
+    "created" : 1445362394330.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "766747369",
+    "id" : "4DFE59C4",
+    "lastKnownWriteTime" : 1445388868,
+    "path" : "~/Documents/programming/R/practice/img_simple_matrix_to_image.R",
+    "project_path" : "img_simple_matrix_to_image.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

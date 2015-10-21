@@ -1,0 +1,8 @@
+img=EBImage::readImage(files = "images/k1.jpg")
+EBImage::display(img)
+rimg=EBImage::getFrame(img,1)
+EBImage::display(rimg)
+gimg=EBImage::getFrame(img,2)
+EBImage::display(gimg)
+bimg=EBImage::getFrame(img,3)
+EBImage::display(bimg)

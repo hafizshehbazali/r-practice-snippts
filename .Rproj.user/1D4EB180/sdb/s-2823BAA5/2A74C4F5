@@ -1,0 +1,18 @@
+{
+    "contents" : "img=EBImage::readImage(files = \"images/k1.jpg\")\nEBImage::display(img)\nrimg=EBImage::getFrame(img,1)\nEBImage::display(rimg)\ngimg=EBImage::getFrame(img,2)\nEBImage::display(gimg)\nbimg=EBImage::getFrame(img,3)\nEBImage::display(bimg)\n",
+    "created" : 1445360967455.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4127516058",
+    "id" : "2A74C4F5",
+    "lastKnownWriteTime" : 1445361818,
+    "path" : "~/Documents/programming/R/practice/img_pr_rgb_conversion.R",
+    "project_path" : "img_pr_rgb_conversion.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

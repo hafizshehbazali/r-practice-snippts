@@ -1,0 +1,17 @@
+{
+    "contents" : "ar=matrix(c(1,2,3,4,5,6,7,8,9),nrow = 3)\nag=matrix(c(1,2,3,4,5,6,7,8,9),nrow = 3)\nab=matrix(c(1,2,3,4,5,6,7,8,9),nrow = 3)\na=(0:15)/15\nprint(a)\nb=rgb(a, green = 0, blue = 0, names = paste(\"red\", 0:15, sep = \".\"))\ntypeof(b)\ndim(b)\nprint(b)\n\nB= matrix(c(2, 4, 3, 1, 5, 7), nrow = 3, dimnames = c(\"row1\",\"row1\",\"row1\",\"col1\",\"col1\",\"col1\"))\nprint(B)\n\n# Class \n\nx<- 10 \nclass(x)\noldClass(x)\ninherits(x,what = \"a\")\nclass(x) <- c(\"a\", \"b\")\n\nk=1\nclass(k)\nis.integer(k)\nis.numeric(k)\nclass(k) <- integer(1)\nk=1\nclass(k)\nis.integer(k)\n\ny=as.integer(3)\ny\nclass(y)\nny=as.numeric(c(34,3,4,2,3))\nclass(ny)\na=as.integer(TRUE)\na=as.integer(FALSE)\nclass(a)\ntypeof(a)\n\nz=1+2i\nclass(z);\nclass(z) <- \"integer\";\nfname=as.character(\"Joe\")\nlname=as.character(\"Smith\")\nfullname=paste(fname, lname,fname, sep = \":\")\nprint(fullname)\n\na=c(1,2,4);\nb=c(6,7,5)\ntypeof(b)\nclass(b)\nc=paste(a,b)\nclass(c)\ntypeof(c)\nsprintf(\"%s has %d dollars\", \"Sam\", 100) \nsprintf(\"%s had %0.2f ammount\", \"Doone\", 199.199)\nsubstr(\"New Start string from here. Stop here. \", start = 4, stop = 20)\n# Image processing \nimg=EBImage::readImage(\"images/white.png\")\ndisplay(img)\ndisplay(img[,,2])\nimg_c=img[1:5, 1:5,]\n",
+    "created" : 1445352053262.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2129969520",
+    "id" : "9ADE407",
+    "lastKnownWriteTime" : 1445361501,
+    "path" : "~/Documents/programming/R/practice/pr_matrix.R",
+    "project_path" : "pr_matrix.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,4 +1,6 @@
-# a=magic()
+#
+library(magic)
+a=magic(5)
 a = matrix(floor(runif(10000, min = 0, max = 255)), nrow = 100) # 100 x 100
 
 b = matrix(floor(runif(10000, min = 0, max = 255)), nrow = 100) - 5 # 100 x 100
